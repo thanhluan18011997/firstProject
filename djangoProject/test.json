@@ -1,0 +1,92 @@
+{
+  'hr': [
+    {
+      'profile:read': 'read'
+    },
+    {
+      'profile:write': 'write'
+    }
+  ],
+  'pm': [
+    {
+      'profile:read': 'read'
+    }
+  ],
+  'admin': [
+    {
+      'profile:read': 'read'
+    },
+    {
+      'requestmanager:write': 'update request manager'
+    },
+    {
+      'profile:write': 'write'
+    }
+  ]
+},
+{
+  'profile:read': 'read',
+  'profile:write': 'write',
+  'requestmanager:write': 'update request manager'
+}
+[
+  {
+    "model": "testoath2.scope",
+    "pk": 1,
+    "fields": {
+      "name": "profile:read",
+      "description": "read"
+    }
+  },
+  {
+    "model": "testoath2.scope",
+    "pk": 2,
+    "fields": {
+      "name": "profile:write",
+      "description": "write"
+    }
+  },
+  {
+    "model": "testoath2.role",
+    "pk": 1,
+    "fields": {
+      "name": "hr_role",
+      "description": "hr_role Description",
+      "scopes": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "testoath2.role",
+    "pk": 2,
+    "fields": {
+      "name": "admin_role",
+      "description": "admin_role Description",
+      "scopes": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "testoath2.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$1FvKpYzTMZYdHrilZ0j6xp$1BsFqsKJ+3ijjSdWIayyWx7ddA/EKjNyZyI5m0OHRXs=",
+      "last_login": "2021-06-17T10:59:11.299Z",
+      "email": "luan@gmail.com",
+      "name": "admin",
+      "created_at": "2021-06-17",
+      "update_at": "2021-06-17",
+      "is_staff": true,
+      "is_superuser": true,
+      "is_active": true,
+      "groups": [],
+      "user_permissions": [],
+      "default_roles": [],
+      "add_scope": [],
+      "except_scope": []
+    }
+  }
+]

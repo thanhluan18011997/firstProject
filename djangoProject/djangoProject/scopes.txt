@@ -1,0 +1,35 @@
+[
+   {
+      "role_name":"hr",
+      "scopes":[
+         {
+            "profile:read":"read"
+         },
+         {
+            "profile:write":"write"
+         }
+      ]
+   },
+   {
+      "role_name":"pm",
+      "scopes":[
+         {
+            "profile:read":"read"
+         }
+      ]
+   },
+   {
+      "role_name":"admin",
+      "scopes":[
+         {
+            "profile:read":"read"
+         },
+         {
+            "requestmanager:write":"update request manager"
+         },
+         {
+            "profile:write":"write"
+         }
+      ]
+   }
+]
